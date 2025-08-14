@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+  <!-- Opening Screen -->
+  <div id="opening" class="fixed top-0 left-0 w-full h-full bg-gradient-to-br from-sky-300 to-sky-700 flex flex-col items-center justify-center text-white z-[9999] animate-fadeIn space-y-4">
+    <h1 class="text-4xl text-center space-y-4">Selamat Datang di <br><span class="font-['Irish_Grover'] font-bold pl-1 pt-10 text-black font-6xl">My Portfolio</span></h1>
+    <p>Azzam Ghozy</p>
+  </div>
+
+  <main id="content" class="hidden">
+    <!-- Header -->
+    <header class="bg-[#B3CBB7] text-center">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-2 p-5 md:gap-10">
+        <h1 class="text-4xl font-['Irish_Grover'] font-bold pr-0 md:pr-10">My Portfolio</h1>
+        <ul class="flex gap-5 list-none justify-center my-4 px-10 md:w-[60%] md:gap-20">
+          <li><a href="#home" class="hvr-grow text-md md:text-2xl text-gray-800 inline-block">Home</a></li>
+          <li><a href="#about" class="hvr-grow text-md md:text-2xl text-gray-800">About Me</a></li>
+          <li><a href="#projects" class="hvr-grow text-md w-fit md:text-2xl text-gray-800">My Certificate</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-[#8EB69B] flex flex-col md:flex-row items-center justify-between py-20 space-y-20" id="home">
+      <div class="text magic-demo magic spaceInLeft px-10 ml-5 md:w-2/3 md:pl-10 ml-10">
+        <h1 class="text-5xl font-light font-['inria-serif'] text-center md:text-left">Hi I am <span id="typed-output" class="font-bold text-[#235347] font-['inria-serif']"></span></h1>
+        <h3 class="text-3xl mt-2 font-bold font-['inria-serif'] text-center md:text-left">Web Developer</h3>
+        <p class="mt-4 w-auto text-center md:text-left md:w-4/5">nama lengkap saya Muhammad Azzam Al Ghozy saya adalah seorang web developer yang sedang melatih skill-skill dalam membangun suatu website,</p>
+        <a class="tombol-1 hvr-forward inline-block bg-[#143C37] text-white px-6 py-3 mt-4 text-center justify-center items-center md:text-left" href="#">More About Me</a>
+      </div>
+      <div class="image magic-demo magic spaceInRight w-full md:w-2/5 px-6">
+        <img src="assets/Gambar-1.png" alt="Azzam Ghozy" class="max-w-full mx-auto md:mx-0" />
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="bg-[#235347] px-6 md:px-36 py-20" id="about">
+      <div class="mb-20">
+        <h1 class="text-5xl text-white font-light mb-10" data-aos="fade-right">About Me</h1>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2" data-aos="fade-up-right">
+            <h2 class="text-2xl font-bold text-white mb-4">Latar Belakang Tentang Saya</h2>
+            <p class="text-white">Saya sekarang adalah pelajar di IDN Boarding School, saya mengambil jurusan RPL ( Rekayasa Perangkat Lunak ). Saat ini saya sedang berada di kelas 10 ( X ). Saya sedang mengembangkan skill-skill saya di bidang website agar kedepannya saya bisa menjadi EXPERT dibidang ini.</p>
+          </div>
+          <div class="md:w-1/2" data-aos="zoom-in-up">
+            <h2 class="text-2xl font-bold text-white mb-4">Keahlian Saya</h2>
+            <p class="text-white">Saya memiliki keahlian dalam bidang website, saya sudah belajar HTML, CSS, dan JavaScript. Saya juga sedang belajar PHP dan MySQL untuk mengembangkan skill saya di bidang website.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-5xl text-white font-light mb-10" data-aos="fade-right">My Skills</h1>
+        <section class="flex flex-wrap justify-center gap-8" data-aos="zoom-in-up">
+          <div class="bg-[#e8f0dc] rounded-3xl p-6 w-72 text-center shadow hover:-translate-y-2 transition">
+            <i class="fas fa-drafting-compass text-4xl text-[#193b2f] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#193b2f] mb-2">UI/UX Designer</h3>
+            <p class="text-sm text-gray-700">saya memiliki skill UI dan UX design dalam membuat beberapa project design, saat ini saya membuat design UI dan UX menggunakan Figma</p>
+          </div>
+          <div class="bg-[#e8f0dc] rounded-3xl p-6 w-72 text-center shadow hover:-translate-y-2 transition">
+            <i class="fas fa-code text-4xl text-[#193b2f] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#193b2f] mb-2">Web Development</h3>
+            <p class="text-sm text-gray-700">Saya memiliki Skill dalam membuat/mengembangkan suatu website agar lebih menarik dan interaktif.</p>
+          </div>
+          <div class="bg-[#e8f0dc] rounded-3xl p-6 w-72 text-center shadow hover:-translate-y-2 transition">
+            <i class="fas fa-display text-4xl text-[#193b2f] mb-4"></i>
+            <h3 class="text-xl font-bold text-[#193b2f] mb-2">Web Design</h3>
+            <p class="text-sm text-gray-700">Saya memiliki Skill dalam Men-Design website agar terlihat bagus dan dinamis. saya mendesign menggunakan aplikasi figma</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="bg-[#8EB69B] px-6 md:px-24 py-20" id="projects">
+      <h1 class="text-5xl font-light mb-12" data-aos="fade-right">My Certificate</h1>
+      <div class="flex flex-wrap justify-center gap-10 mt-8">
+        <img src="assets/sertifikat-1.png" alt="" data-aos="zoom-in-up" class="hover:-translate-y-2 transition" />
+        <img src="assets/sertifikat-2.png" alt="" data-aos="zoom-in-up" class="hover:-translate-y-2 transition" />
+        <img src="assets/sertifikat-3.png" alt="" data-aos="zoom-in-up" class="hover:-translate-y-2 transition" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#B3CBB7]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8EB69B" fill-opacity="1" d="M0,224L40,208C80,192,160,160,240,170.7C320,181,400,235,480,261.3C560,288,640,288,720,250.7C800,213,880,139,960,144C1040,149,1120,235,1200,245.3C1280,256,1360,192,1400,160L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+      <div class="flex flex-col md:flex-row justify-between p-6 space-y-20">
+        <div class="md:w-1/2 pl-10" data-aos="fade-right">
+          <h1 class="text-4xl font-['Irish_Grover'] font-bold">My Portfolio</h1>
+          <p class="mt-4 w-3/4">my portfolio adalah suatu website yang menampilakan data saya dalam suatu website simple dan enak dilihat</p>
+          <h2 class="mt-4 font-bold">My Sosial Media</h2>
+          <div class="flex gap-4 mt-2">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook text-4xl"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-4xl"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin text-4xl"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram text-4xl"></i></a>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0" data-aos="zoom-in-up">
+          <h1 class="text-4xl font-['Irish_Grover'] font-bold">Contact Me</h1>
+          <p class="mt-2 w-3/4">Jika ada yang ingin ditanyakan, silahkan hubungi saya melalui form dibawah ini atau melalui email saya di <a href="mailto:ghozy0432@gmail.com" class="underline text-blue-600">sini</a></p>
+          <form action="#" method="post" class="mt-4 flex flex-col">
+            <input type="text" name="name" placeholder="Masukkan nama" required class="border p-2 w-full max-w-md mb-4">
+            <input type="email" name="email" placeholder="Masukkan email" required class="border p-2 w-full max-w-md mb-4">
+            <textarea name="comment" placeholder="Tulis komentar Anda" required class="border p-2 w-full max-w-md mb-4"></textarea>
+            <button type="submit" class="bg-gray-800 text-white px-6 py-2 w-20">Kirim</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t-4 border-black text-center p-4 text-sm text-gray-600">&copy; 2025 Azzam Ghozy. All Rights Reserved.</div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="Script.js"></script>
+</body>
+</html>
+
